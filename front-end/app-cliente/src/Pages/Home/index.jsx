@@ -1,12 +1,13 @@
-import Navbar from "../../Components/Navbar"
-import Sidebar from "../../Components/Sidebar/Sidebar";
+import BarraSuperior from "../../Components/Navbar"
 import './home.scss';
 
 const Home = () => {
     return(
-        <div className="container">
-            <Sidebar/>
-        </div>
+        <>
+        <BarraSuperior/>
+        <h1>Página Inicial</h1>
+        </>
+            
     )
 }
 
