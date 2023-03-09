@@ -8,7 +8,7 @@ const Configuracao = () => {
             <div className="container">
                 <h1>Configurações da Empresa</h1>
                 <hr />
-                <h2>Nomo da Empresa: </h2><span>DTCEA-SI</span>
+                <h2>Nome da Empresa: </h2><span>DTCEA-SI</span>
                 <hr />
                 <h2>Departamentos:</h2>
                 <ul>
