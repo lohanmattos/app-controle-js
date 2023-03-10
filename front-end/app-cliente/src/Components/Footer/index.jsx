@@ -3,7 +3,7 @@ const Footer = () =>{
     return(
         <div>
             <footer>
-                <p>Rodape</p>
+                <p>Desenvolvido por: Lohan Amendola - 2023</p>
             </footer>
 
         </div>
