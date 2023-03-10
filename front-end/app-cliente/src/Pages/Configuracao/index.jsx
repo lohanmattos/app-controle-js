@@ -1,3 +1,4 @@
+import Footer from "../../Components/Footer";
 import BarraSuperior from "../../Components/Navbar";
 import "./configuracao.scss"
 
@@ -33,7 +34,7 @@ const Configuracao = () => {
                     </tr>
                 </table>
             </div>
-
+            <Footer/>
         </div>
     )
 }
