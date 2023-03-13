@@ -1,6 +1,6 @@
 import BarraSuperior from "../../Components/Navbar"
 import Footer from "../../Components/Footer";
-import './home.scss';
+import './home.css';
 import logo from '../../assets/img/checklist.png';
 
 const Home = () => {

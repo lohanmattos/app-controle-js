@@ -1,6 +1,6 @@
 import Footer from "../../Components/Footer";
 import BarraSuperior from "../../Components/Navbar";
-import "./configuracao.scss"
+import "./configuracao.css"
 
 const Configuracao = () => {
     return (
@@ -8,23 +8,35 @@ const Configuracao = () => {
             <BarraSuperior />
             <div className="container">
                 <div class="container mt-2">
-                    <h2>Nome da Empresa</h2>
-                    <p>Desenvolvimento de Sistemas</p>
-                    <table class="table">
+                    <h2>PineApple</h2>
+                    <p>Soluções em Tecnologias</p>
+                    <table class="table caption-top">
+                    <caption>Lista de Departamentos</caption>
                         <thead class="table-defaut">
                             <tr>
-                                <th>Departamentos</th>
+                                <th>Sigla</th>
+                                <th >Nome do Departamento</th>
+                                <th colspan="2" >Opções</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Administrativa</td>
+                                <td>ADM</td>
+                                <td>Administrativo</td>
+                                <td>Mais</td>
+                                <td>Editar</td>
                             </tr>
                             <tr>
-                                <td>Técnica</td>
+                                <td>TI</td>
+                                <td>Tecnologia da Informação</td>
+                                <td>Mais</td>
+                                <td>Editar</td>
                             </tr>
                             <tr>
-                                <td>Comando</td>
+                                <td>RH</td>
+                                <td>Recuros Humanos</td>
+                                <td>Mais</td>
+                                <td>Editar</td>
                             </tr>
                         </tbody>
                     </table>

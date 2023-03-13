@@ -1,29 +1,25 @@
-import { Link, Outlet } from 'react-router-dom';
-import './navbar.scss';
+import { Outlet } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import './navbar.css';
 
 const BarraSuperior = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-sm navbar-dark">
-        <div className="container-fluid">
-        <Link className="navbar-brand" to="/">Home</Link>
-          <div className="collapse navbar-collapse">
-            <ul className="navbar-nav me-auto ">
-              <li className="nav-item">
-                <Link className="nav-link" to="/dashboard">Dashboard</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/produtos">Produtos</Link>
-              </li>
-            </ul>
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <Link className="nav-link" to="/configuracao">Configuracões</Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <Navbar expand="lg" variant="dark">
+        <Container fluid>
+          <Navbar.Brand href="/">Coruja Gestor</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="/produtos">Produtos</Nav.Link>
+              <Nav.Link href="/dashboard">Dashboard</Nav.Link>
+              <Nav.Link href="/configuracao">Configurações</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
       <Outlet />
     </>
   )

@@ -1,5 +1,3 @@
-@import "bootstrap/scss/bootstrap";
-
 footer p{ 
     font-weight: 500;
     color: black;
@@ -9,5 +7,4 @@ footer p{
 
 footer{
     width: 100%;
-    background-color: rgb(255, 255, 255);
 }
