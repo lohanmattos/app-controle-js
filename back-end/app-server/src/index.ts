@@ -1,5 +1,5 @@
-import 'reflect-metadata'
 import express from "express";
+import 'reflect-metadata';
 import statusRoute from "./routes/status.route";
 
 //Configuração padrao
