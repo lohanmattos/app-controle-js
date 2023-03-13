@@ -1,15 +1,13 @@
 @import "bootstrap/scss/bootstrap";
 
-p{ 
+footer p{ 
     font-weight: 500;
+    color: black;
     text-align: center;
-    color: #fff;
+    font-weight: 100;
 }
 
 footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
-    background-color: rgb(2, 72, 115);
+    background-color: rgb(255, 255, 255);
 }

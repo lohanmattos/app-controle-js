@@ -7,19 +7,30 @@ const Configuracao = () => {
         <div>
             <BarraSuperior />
             <div className="container">
-                <h1>Configurações da Empresa</h1>
-                <hr />
-                <h2>Nome da Empresa: </h2><span>DTCEA-SI</span>
-                <hr />
-                <h2>Departamentos:</h2>
-                <ul>
-                    <li>Administrativa</li>
-                    <li>Técnica</li>
-                    <li>Comando</li>
-                </ul>
-                <hr />               
+                <div class="container mt-2">
+                    <h2>Nome da Empresa</h2>
+                    <p>Desenvolvimento de Sistemas</p>
+                    <table class="table">
+                        <thead class="table-defaut">
+                            <tr>
+                                <th>Departamentos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Administrativa</td>
+                            </tr>
+                            <tr>
+                                <td>Técnica</td>
+                            </tr>
+                            <tr>
+                                <td>Comando</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     )
 }

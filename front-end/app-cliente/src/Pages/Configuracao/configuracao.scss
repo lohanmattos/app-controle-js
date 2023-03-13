@@ -3,6 +3,14 @@ table, th, td {
 }
 
 h1{
-    text-align: center;
-    margin: 20px;
+    margin-top: 20px;
+}
+
+.table-defaut{
+    background-color: rgb(2, 72, 115);
+}
+
+.table-defaut th{
+    color: #fff;
+    font-weight: 500;
 }
