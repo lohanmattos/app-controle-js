@@ -1,4 +1,5 @@
-import {Entity , Column, ManyToOne, PrimaryColumn} from 'typeorm'
+import {Entity , Column, PrimaryColumn, ManyToOne} from 'typeorm'
+import { Empresa } from './Empresa'
 
 @Entity('tb_departamento')
 export class Departamento{
@@ -12,7 +13,6 @@ export class Departamento{
     @Column({name:'departamento_sigla'})
     sigla:string
 
-    //@ManyToOne(() => Empresa, (empresa) => empresa.id)
-    //empresa: Empresa
-
+    @ManyToOne(() => Empresa, (empresa) => empresa.departamentos)
+    empresa: Empresa
 }

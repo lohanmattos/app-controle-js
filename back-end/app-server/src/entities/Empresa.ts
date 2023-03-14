@@ -1,4 +1,5 @@
-import {Entity , Column, OneToMany, PrimaryColumn} from 'typeorm'
+import {Entity , Column, PrimaryColumn, OneToMany} from 'typeorm'
+import { Departamento } from './Departamento'
 
 @Entity('tb_empresa')
 export class Empresa{
@@ -12,6 +13,7 @@ export class Empresa{
     @Column({name:'empresa_sigla'})
     sigla:string
 
-    //@OneToMany(() => Departamento, (departamentos) => departamentos.id)
-    //departamentos: Departamento[]
+    @OneToMany(() => Departamento, (departamento) => departamento.empresa)
+    departamentos: Departamento[]
+
 }
