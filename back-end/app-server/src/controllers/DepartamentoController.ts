@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { StatusCodes } from "http-status-codes";
+import { StatusCodes } from 'http-status-codes'
 import { Empresa } from "../entities/Empresa";
 import { departamentoService } from "../Services/DepartamentoService"; 
 
