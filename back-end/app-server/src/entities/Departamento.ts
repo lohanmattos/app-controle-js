@@ -1,18 +1,22 @@
-import {Entity , Column, PrimaryColumn, ManyToOne} from 'typeorm'
+import {Entity , Column, ManyToOne, PrimaryGeneratedColumn, OneToMany} from 'typeorm'
 import { Empresa } from './Empresa'
+import { Secao } from './Secao'
 
 @Entity('tb_departamento')
 export class Departamento{
     
-    @PrimaryColumn()
+    @PrimaryGeneratedColumn()
     id: number
 
-    @Column({name:'departamento_nome'})
+    @Column()
     nome:string
     
-    @Column({name:'departamento_sigla'})
+    @Column()
     sigla:string
 
     @ManyToOne(() => Empresa, (empresa) => empresa.departamentos)
     empresa: Empresa
+
+    @OneToMany(() => Secao, (secao) => secao.departamento )
+    secoes: Secao[]
 }

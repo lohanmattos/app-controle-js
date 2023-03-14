@@ -1,16 +1,19 @@
-import {Entity , Column, PrimaryColumn, OneToMany} from 'typeorm'
+import {Entity , Column, OneToMany, PrimaryGeneratedColumn} from 'typeorm'
 import { Departamento } from './Departamento'
 
 @Entity('tb_empresa')
 export class Empresa{
     
-    @PrimaryColumn()
+    @PrimaryGeneratedColumn()
     id: number
 
-    @Column({name:'empresa_nome'})
+    @Column()
     nome:string
+
+    @Column()
+    descricao:string
     
-    @Column({name:'empresa_sigla'})
+    @Column()
     sigla:string
 
     @OneToMany(() => Departamento, (departamento) => departamento.empresa)
