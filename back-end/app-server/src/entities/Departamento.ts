@@ -2,7 +2,7 @@ import {Entity , Column, ManyToOne, PrimaryGeneratedColumn, OneToMany} from 'typ
 import { Empresa } from './Empresa'
 import { Secao } from './Secao'
 
-@Entity('tb_departamento')
+@Entity()
 export class Departamento{
     
     @PrimaryGeneratedColumn()
@@ -17,6 +17,6 @@ export class Departamento{
     @ManyToOne(() => Empresa, (empresa) => empresa.departamentos)
     empresa: Empresa
 
-    @OneToMany(() => Secao, (secao) => secao.departamento )
-    secoes: Secao[]
+    //@OneToMany(() => Secao, (secao) => secao.departamento )
+    //secoes: Secao[]
 }

@@ -1,7 +1,7 @@
 import {Entity , Column, OneToMany, PrimaryGeneratedColumn, ManyToOne} from 'typeorm'
 import { Departamento } from './Departamento'
 
-@Entity('tb_secao')
+//@Entity()
 export class Secao{
     
     @PrimaryGeneratedColumn()
@@ -16,7 +16,7 @@ export class Secao{
     @Column()
     sigla:string
 
-    @ManyToOne(() => Departamento, (departamento) => departamento.secoes)
-    departamento: Departamento
+    //@ManyToOne(() => Departamento, (departamento) => departamento.secoes)
+    //departamento: Departamento
 
 }

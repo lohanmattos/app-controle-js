@@ -1,7 +1,7 @@
 import {Entity , Column, OneToMany, PrimaryGeneratedColumn} from 'typeorm'
 import { Departamento } from './Departamento'
 
-@Entity('tb_empresa')
+@Entity()
 export class Empresa{
     
     @PrimaryGeneratedColumn()
