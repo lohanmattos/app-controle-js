@@ -20,3 +20,12 @@ São eles:
 
 * GET /status
 
+### Empresas
+
+* GET /empresa 
+* POST/empresa
+
+### Departamentos
+
+* GET /departamento
+* POST /departamento
